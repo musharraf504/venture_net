@@ -14,7 +14,7 @@ contract CampaignFactory {
         uint indexed timestamp,
         string indexed category
     );
-
+      
     function createCampaign(
         string memory campaignTitle, 
         uint requiredCampaignAmount, 
