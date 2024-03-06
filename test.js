@@ -32,6 +32,8 @@ const main = async () => {
   const Donations = contract.filters.donated('0xc538779A628a21D7CCA7b1a3E57E92f5226C3E27');
   const AllDonations = await contract.queryFilter(Donations);
 
+
+  
   const DonationsData =  AllDonations.map((e) => {
     return {
       donar: e.args.donar,
