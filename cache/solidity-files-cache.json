@@ -12,7 +12,7 @@
             "enabled": false,
             "runs": 200
           },
-          "outputSelection": {
+          "outputSelection":  {
             "*": {
               "*": [
                 "abi",
