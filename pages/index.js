@@ -36,6 +36,8 @@ export default function Index({AllData, HealthData, EducationData,AnimalData}) {
               alt="Crowdfunding dapp"
               layout='fill' 
               src={"https://crowdfunding.infura-ipfs.io/ipfs/" + e.image} 
+              // src={"https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg"}
+
             />
           </CardImg>
           <Title>
@@ -155,18 +157,28 @@ const HomeWrapper = styled.div`
 `
 const FilterWrapper = styled.div`
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 80%;
-  margin-top: 15px;
+  margin-top: 50px;
 `
 const Category = styled.div`
   padding: 10px 15px;
   background-color: ${(props) => props.theme.bgDiv};
   margin: 0px 15px;
   border-radius: 8px;
-  font-family: 'Poppins';
+  font-family: 'montserrat';
   font-weight: normal;
   cursor: pointer;
+  border: 1px solid #1B1A55;
+  transition: all 0.3s;
+  &:hover{
+    background-color: #fff;
+    box-shadow: -5px 5px #1B1A55;
+    /* margin-left: 10px; */
+    color: #1B1A55;
+  }
+
 `
 const CardsWrapper = styled.div`
   display: flex;
@@ -195,7 +207,7 @@ const CardImg = styled.div`
   width: 100%;
 `
 const Title = styled.h2`
-  font-family: 'Roboto';
+  font-family: 'montserrat';
   font-size: 18px;
   margin: 2px 0px;
   background-color: ${(props) => props.theme.bgSubDiv};
@@ -216,7 +228,7 @@ const Text = styled.p`
   align-items: center;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto';
+  font-family: 'montserrat';
   font-size: 18px;
   font-weight: bold;
 `
@@ -229,9 +241,10 @@ const Button = styled.button`
       linear-gradient(180deg, #00b712 0%, #5aff15 80%); 
   border: none;
   cursor: pointer;
-  font-family: 'Roboto';
+  font-family: 'montserrat';
   text-transform: uppercase;
   color: #fff;
   font-size: 14px;
   font-weight: bold;
 `
+

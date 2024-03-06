@@ -22,6 +22,7 @@ const Layout = ({ children }) => {
           <GlobalStyle />
           <Header />
           {children}
+            
         </LayoutWrapper>
       </ThemeProvider>
     </App.Provider>

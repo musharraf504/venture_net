@@ -28,6 +28,16 @@ const HeaderNavWrapper = styled.div`
   padding: 6px;
   height: 50%;
   border-radius: 10px;
+  padding: 10px 0px;
+  border: 1px solid #1B1A55;
+  transition: all 0.3s;
+  &:hover{
+    background-color: #fff;
+    box-shadow: -5px 5px #1B1A55;
+    /* margin-left: 10px; */
+    color: #1B1A55;
+  }
+
   `
 
 const HeaderNavLinks = styled.div`
@@ -36,14 +46,18 @@ const HeaderNavLinks = styled.div`
   justify-content: space-between;
   background-color: ${(props) => props.active ? props.theme.bgSubDiv : props.theme.bgDiv };
   height: 100%;
-  font-family: 'Roboto';
+  font-family: 'montserrat';
   margin: 5px;
-  border-radius: 10px;
-  padding: 0 5px 0 5px;
+  /* border-radius: 10px; */
+  /* padding: 5px 10px 5px 10px; */
+  padding: 18px;
   cursor: pointer;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: small;
+  font-size: 15px;
+  color: #1B1A55;
+  text-decoration: none;
+  
 `
 
 export default HeaderNav

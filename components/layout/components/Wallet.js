@@ -57,15 +57,26 @@ const ConnectWalletWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   background-color: ${(props) => props.theme.bgDiv};
-  padding: 5px 9px;
+  /* padding: 5px 9px; */
+  padding: 10px 0 10px 10px;
+
   height: 100%;
   color: ${(props) => props.theme.color};
   border-radius: 10px;
   margin-right: 15px;
-  font-family: 'Roboto';
+  font-family: 'montserrat';
   font-weight: bold;
   font-size: small;
   cursor: pointer;
+  border: 1px solid #1B1A55;
+  transition: all 0.3s;
+  &:hover{
+    background-color: #fff;
+    box-shadow: -5px 5px #1B1A55;
+    /* margin-left: 10px; */
+    color: #1B1A55;
+  }
+
 `;
 
 const Address = styled.h2`
@@ -74,8 +85,13 @@ const Address = styled.h2`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 5px 0 5px;
-    border-radius: 10px;
+    /* padding: 0 5px 0 5px; */
+    border-radius: 0 10px 10px 0;
+    padding: 10px;
+  /* border: 1px solid #1B1A55; */
+
+
+
 `
 
 const Balance = styled.h2`
@@ -84,6 +100,8 @@ const Balance = styled.h2`
     align-items: center;
     justify-content: center;
     margin-right: 5px;
+  /* padding: 18px; */
+
 `
 
 export default Wallet;

@@ -93,19 +93,23 @@ const FormRightWrapper = () => {
 
 const FormRight = styled.div`
   width:45%;
+  font-size: 20px;
 `
 
 const FormInput = styled.div`
   display:flex ;
   flex-direction:column;
-  font-family:'poppins';
+  font-family:'montserrat';
   margin-top:10px ;
+  font-size: 20px;
 `
 
 const FormRow = styled.div`
   display: flex;
   justify-content:space-between;
   width:100% ;
+  font-family:'montserrat';
+  /* font-size: 20px; */
 `
 
 const Input = styled.input`
@@ -114,22 +118,35 @@ const Input = styled.input`
   color:${(props) => props.theme.color} ;
   margin-top:4px;
   border:none ;
-  border-radius:8px ;
+  border-radius:10px ;
   outline:none;
-  font-size:large;
+  font-size:20px;
   width:100% ;
+  font-family:'montserrat';
+  border: 1px solid #1B1A55;
+  transition: all 0.3s;
+  &:hover{
+    background-color: #fff;
+    box-shadow: -5px 5px #1B1A55;
+    /* margin-left: 10px; */
+    color: #1B1A55;
+  }
 ` 
 
 const RowFirstInput = styled.div`
   display:flex ;
   flex-direction:column ;
   width:45% ;
+  font-family:'montserrat';
+  /* font-size: 20px; */
+  
 `
 
 const RowSecondInput = styled.div`
   display:flex ;
   flex-direction:column ;
   width:45% ;
+  font-family:'montserrat';
 `
 
 const Select = styled.select`
@@ -138,10 +155,19 @@ const Select = styled.select`
   color:${(props) => props.theme.color} ;
   margin-top:4px;
   border:none ;
-  border-radius:8px ;
+  border-radius:10px ;
   outline:none;
-  font-size:large;
+  font-size:20px;
   width:100% ;
+  font-family:'montserrat';
+  border: 1px solid #1B1A55;
+  transition: all 0.3s;
+  &:hover{
+    background-color: #fff;
+    box-shadow: -5px 5px #1B1A55;
+    /* margin-left: 10px; */
+    color: #1B1A55;
+  }
 `
 
 const Image = styled.input`
@@ -151,8 +177,18 @@ const Image = styled.input`
   border:none ;
   border-radius:8px ;
   outline:none;
-  font-size:large;
+  font-size:20px;
   width:100% ;
+  font-family:'montserrat';
+  border: 1px solid #1B1A55;
+  transition: all 0.3s;
+  &:hover{
+    background-color: #fff;
+    box-shadow: -5px 5px #1B1A55;
+    /* margin-left: 10px; */
+    color: #1B1A55;
+    cursor: pointer;
+  }
 
   &::-webkit-file-upload-button {
     padding: 15px ;
@@ -161,6 +197,8 @@ const Image = styled.input`
     outline:none ;
     border:none ;
     font-weight:bold ;
+    font-family:'montserrat';
+    cursor: pointer;
   }  
 `
 
@@ -169,15 +207,26 @@ const Button = styled.button`
   justify-content:center;
   width:100% ;
   padding:15px ;
-  color:white ;
-  background-color:#00b712 ;
-  background-image:
-      linear-gradient(180deg, #00b712 0%, #5aff15 80%) ;
+  color:#fff ;
+  background-color:#1B1A55 ;
+  /* background-image:
+      linear-gradient(180deg, #00b712 0%, #5aff15 80%) ; */
   border:none;
   margin-top:30px ;
   cursor: pointer;
   font-weight:bold ;
-  font-size:large ;
+  font-size:20px ;
+  font-family:'montserrat';
+  border-radius: 10px;
+  border: 1px solid #1B1A55;
+  transition: all 0.3s;
+  &:hover{
+    background-color: #fff;
+    box-shadow: -5px 5px #1B1A55;
+    /* margin-left: 10px; */
+    color: #1B1A55;
+  }
+  
 `
 
 export default FormRightWrapper
